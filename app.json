@@ -1,0 +1,26 @@
+{
+  "name": "Fast Music API",
+  "description": "FastAPI metadata/search backend for a Telegram music bot",
+  "repository": "https://github.com/Yewsdhi/YouTubeapikey",
+  "keywords": ["fastapi", "music-api", "telegram", "youtube"],
+  "env": {
+    "API_KEYS": {
+      "description": "Comma-separated secret API keys",
+      "required": false
+    },
+    "CACHE_TTL": {
+      "description": "Cache lifetime in seconds",
+      "value": "300",
+      "required": false
+    },
+    "LYRICS_URL": {
+      "description": "Optional authorized lyrics provider endpoint",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
