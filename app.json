@@ -1,0 +1,23 @@
+{
+  "name": "Custom Music API",
+  "description": "Heroku-ready YouTube metadata/search API",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "API_KEY": {
+      "description": "Secret API key required by protected endpoints",
+      "required": true
+    },
+    "CACHE_TTL": {
+      "description": "Cache lifetime in seconds",
+      "value": "300"
+    },
+    "MAX_RESULTS": {
+      "description": "Default maximum search results",
+      "value": "8"
+    }
+  }
+}
